@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo "🚀 Déploiement sur GitHub"
+echo "========================"
+echo ""
+echo "⚠️  IMPORTANT: Avant de continuer, assurez-vous d'avoir:"
+echo "1. Créé le repository 'eclat-mobile' sur github.com/florentivo"
+echo "2. Généré un Personal Access Token sur GitHub"
+echo ""
+echo "Pour créer un token:"
+echo "1. Allez sur: https://github.com/settings/tokens"
+echo "2. Cliquez sur 'Generate new token (classic)'"
+echo "3. Nom: 'eclat-mobile-deploy'"
+echo "4. Cochez: 'repo' (toutes les permissions repo)"
+echo "5. Cliquez sur 'Generate token'"
+echo "6. COPIEZ le token (vous ne le reverrez plus!)"
+echo ""
+read -p "Appuyez sur ENTER quand c'est fait..."
+
+echo ""
+echo "📤 Push vers GitHub..."
+git push -u origin main
+
+echo ""
+echo "✅ Si le push a réussi, votre site sera bientôt disponible sur:"
+echo "   https://florentivo.github.io/eclat-mobile/"
+echo ""
+echo "📝 N'oubliez pas d'activer GitHub Pages:"
+echo "1. Allez dans Settings > Pages sur votre repo"
+echo "2. Source: Deploy from a branch"
+echo "3. Branch: main, Folder: / (root)"
+echo "4. Save"

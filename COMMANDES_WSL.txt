@@ -1,0 +1,17 @@
+# Commandes à exécuter dans WSL (pas PowerShell)
+
+# 1. Ouvrez WSL en tapant dans PowerShell :
+wsl
+
+# 2. Allez dans le dossier du projet :
+cd /mnt/d/claude/bar_mobile
+
+# 3. Vérifiez que Git est bien là :
+git --version
+
+# 4. Poussez sur GitHub :
+git push -u origin main
+
+# Quand demandé :
+# Username: florentivo
+# Password: [Collez votre token GitHub]
